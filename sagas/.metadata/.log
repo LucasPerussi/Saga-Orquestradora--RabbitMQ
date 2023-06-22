@@ -11665,3 +11665,66 @@ java.lang.IllegalStateException: Disconnected before saving. Please post stacktr
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 15:58:12.215
 !MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:06:50.127
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:07:42.816
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:07:48.879
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:08:03.118
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-22 16:08:42.916
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:09:30.523
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:09:59.014
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:11:38.663
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:11:42.414
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:12:31.495
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:12:48.331
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:13:07.546
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:13:37.577
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:14:05.443
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:14:24.339
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:14:37.721
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:15:23.828
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:19:39.779
+!MESSAGE Classpath changed for project: producers
