@@ -11850,3 +11850,81 @@ Java Model Exception: Error in Java Model (code 969): novoGerente(GerenteDTO) [i
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 17:03:22.676
 !MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:23:14.273
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:24:57.729
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:36:32.843
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:36:48.645
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-22 19:36:55.439
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-22 19:36:56.843
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:37:29.961
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:43:37.862
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:46:19.803
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:46:30.600
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:48:07.456
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:49:58.234
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:51:08.640
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:51:26.898
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:52:43.722
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:56:08.268
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:57:36.708
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:57:59.698
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 19:58:25.995
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 20:00:06.404
+!MESSAGE Classpath changed for project: listeners
