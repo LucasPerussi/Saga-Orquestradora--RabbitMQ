@@ -40,18 +40,35 @@ public class RabbitMQConnection {
 	private void adiciona() {
 		Queue filaEstoque = this.fila(RabbitMQConstantes.FILA_ESTOQUE);
 		Queue filaPreco = this.fila(RabbitMQConstantes.FILA_PRECO);
+		Queue filaCliente = this.fila(RabbitMQConstantes.FILA_CLIENTE);
+		Queue filaConta = this.fila(RabbitMQConstantes.FILA_CONTA);
+		Queue filaGerente = this.fila(RabbitMQConstantes.FILA_GERENTE);
+		Queue filaAutenticacao = this.fila(RabbitMQConstantes.FILA_AUTENTICACAO);
 		
 		DirectExchange troca =  this.trocaDireta();
+		
 		Binding ligacaoEstoque = this.relacionamento(filaEstoque, troca);
 		Binding ligacaoPreco = this.relacionamento(filaPreco, troca);
+		Binding ligacaoCliente = this.relacionamento(filaCliente, troca);
+		Binding ligacaoConta = this.relacionamento(filaConta, troca);
+		Binding ligacaoGerente = this.relacionamento(filaGerente, troca);
+		Binding ligacaoAutenticacao = this.relacionamento(filaAutenticacao, troca);
 		
 		this.amqpAdmin.declareQueue(filaEstoque);
 		this.amqpAdmin.declareQueue(filaPreco);
+		this.amqpAdmin.declareQueue(filaCliente);
+		this.amqpAdmin.declareQueue(filaConta);
+		this.amqpAdmin.declareQueue(filaGerente);
+		this.amqpAdmin.declareQueue(filaAutenticacao);
 		
 		this.amqpAdmin.declareExchange(troca);
 		
 		this.amqpAdmin.declareBinding(ligacaoEstoque);
 		this.amqpAdmin.declareBinding(ligacaoPreco);
+		this.amqpAdmin.declareBinding(ligacaoCliente);
+		this.amqpAdmin.declareBinding(ligacaoConta);
+		this.amqpAdmin.declareBinding(ligacaoGerente);
+		this.amqpAdmin.declareBinding(ligacaoAutenticacao);
 	}
 	
 }

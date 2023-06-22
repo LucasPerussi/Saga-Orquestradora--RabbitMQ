@@ -1,0 +1,5 @@
+package com.sagas.dto;
+
+public class AutenticacaoDTO {
+
+}
