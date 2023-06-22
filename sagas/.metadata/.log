@@ -11728,3 +11728,125 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:19:39.779
 !MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:29:49.116
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:30:03.947
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:31:42.975
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:31:50.552
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:32:15.247
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:33:25.974
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:33:42.287
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:34:04.295
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:34:04.295
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:34:54.520
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:35:19.319
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:35:51.743
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:36:06.478
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:50:03.499
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:50:06.920
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-22 16:50:19.590
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:50:28.648
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:52:42.886
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-22 16:53:07.598
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-06-22 16:53:07.608
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): novoGerente(GerenteDTO) [in MovimentacaoController [in [Working copy] MovimentacaoController.java [in com.producers.controller [in src/main/java [in producers]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:645)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:521)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:753)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:671)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:663)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-06-22 16:53:07.609
+!MESSAGE novoGerente(GerenteDTO) [in MovimentacaoController [in [Working copy] MovimentacaoController.java [in com.producers.controller [in src/main/java [in producers]]]]] does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:54:10.127
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:54:37.553
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:57:16.288
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:57:52.579
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:59:10.033
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 16:59:25.155
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-22 17:03:22.676
+!MESSAGE Classpath changed for project: producers

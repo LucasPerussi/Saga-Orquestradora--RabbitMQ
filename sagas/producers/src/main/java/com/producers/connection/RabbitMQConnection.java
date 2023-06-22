@@ -44,6 +44,7 @@ public class RabbitMQConnection {
 		Queue filaConta = this.fila(RabbitMQConstantes.FILA_CONTA);
 		Queue filaGerente = this.fila(RabbitMQConstantes.FILA_GERENTE);
 		Queue filaAutenticacao = this.fila(RabbitMQConstantes.FILA_AUTENTICACAO);
+		Queue filaMovimentacao = this.fila(RabbitMQConstantes.FILA_MOVIMENTACAO);
 		
 		DirectExchange troca =  this.trocaDireta();
 		
@@ -53,6 +54,7 @@ public class RabbitMQConnection {
 		Binding ligacaoConta = this.relacionamento(filaConta, troca);
 		Binding ligacaoGerente = this.relacionamento(filaGerente, troca);
 		Binding ligacaoAutenticacao = this.relacionamento(filaAutenticacao, troca);
+		Binding ligacaoMovimentacao = this.relacionamento(filaMovimentacao, troca);
 		
 		this.amqpAdmin.declareQueue(filaEstoque);
 		this.amqpAdmin.declareQueue(filaPreco);
@@ -60,6 +62,7 @@ public class RabbitMQConnection {
 		this.amqpAdmin.declareQueue(filaConta);
 		this.amqpAdmin.declareQueue(filaGerente);
 		this.amqpAdmin.declareQueue(filaAutenticacao);
+		this.amqpAdmin.declareQueue(filaMovimentacao);
 		
 		this.amqpAdmin.declareExchange(troca);
 		
@@ -69,6 +72,7 @@ public class RabbitMQConnection {
 		this.amqpAdmin.declareBinding(ligacaoConta);
 		this.amqpAdmin.declareBinding(ligacaoGerente);
 		this.amqpAdmin.declareBinding(ligacaoAutenticacao);
+		this.amqpAdmin.declareBinding(ligacaoMovimentacao);
 	}
 	
 }

@@ -13,5 +13,6 @@ public class RabbitMQConstantes {
 	public static final String FILA_AUTO_CADASTRO = "AUTO_CADASTRO";
 	public static final String FILA_ALTERA_PERFIL = "ALTERA_PERFIL";
 	public static final String FILA_INSERE_GERENTE = "INSERE_GERENTE";
-	
+	public static final String FILA_MOVIMENTACAO = "MOVIMENTACAO";
+
 }

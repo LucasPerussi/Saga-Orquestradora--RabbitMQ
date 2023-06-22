@@ -19,6 +19,13 @@ public class ContaConsumer {
 		ContaDTO contaDTO = new ObjectMapper().readValue(mensagem, ContaDTO.class);
 		System.out.println("------------CONTA--------------------");
 		System.out.println(contaDTO.id);
+		System.out.println(contaDTO.clienteId);
+		System.out.println(contaDTO.gerenteId);
+		System.out.println(contaDTO.numero);
+		System.out.println(contaDTO.saldo);
+		System.out.println(contaDTO.limite);
+		System.out.println(contaDTO.dataCriacao);
+		System.out.println(contaDTO.movimentacoes);
 		System.out.println("---------------------------------");
 		
 //		throw new IllegalArgumentException("Argumento Inválido");
