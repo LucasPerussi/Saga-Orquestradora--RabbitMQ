@@ -20,13 +20,13 @@ public class ContaConsumer {
 		ContaDTO contaDTO = new ObjectMapper().readValue(mensagem, ContaDTO.class);
 //		MovimentacaoDTO movimentacoes = new ObjectMapper().readValue(mensagem, MovimentacaoDTO.class);
 		System.out.println("------------CONTA--------------------");
-		System.out.println(contaDTO.id);
-		System.out.println(contaDTO.clienteId);
-		System.out.println(contaDTO.gerenteId);
-		System.out.println(contaDTO.numero);
-		System.out.println(contaDTO.saldo);
-		System.out.println(contaDTO.limite);
-		System.out.println(contaDTO.dataCriacao);
+		System.out.println(contaDTO.getId());
+		System.out.println(contaDTO.getClienteId());
+		System.out.println(contaDTO.getGerenteId());
+		System.out.println(contaDTO.getNumero());
+		System.out.println(contaDTO.getSaldo());
+		System.out.println(contaDTO.getLimite());
+		System.out.println(contaDTO.getDataCriacao());
 //		System.out.println(contaDTO.movimentacoes);
 		if (contaDTO.movimentacoes != null) {
 		    	for (MovimentacaoDTO movimentacao : contaDTO.movimentacoes) {

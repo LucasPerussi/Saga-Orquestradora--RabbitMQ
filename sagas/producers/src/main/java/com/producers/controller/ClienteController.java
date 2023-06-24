@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.producers.constantes.RabbitMQConstantes;
 import com.producers.dto.ClienteDTO;
 import com.producers.service.RabbitMQService;
+import com.producers.uteis.RabbitMQConstantes;
+import com.producers.uteis.CustomResponse;
 
 @RestController
 @RequestMapping(value = "cliente")
@@ -22,10 +23,18 @@ public class ClienteController {
 //	envia mensagem para a fila
 	@PutMapping
 	private ResponseEntity<?> novoCliente(@RequestBody ClienteDTO clienteDTO) {
-		System.out.println(clienteDTO.nome);
+		System.out.println(clienteDTO.getNome());
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_CLIENTE, clienteDTO);
-		return new ResponseEntity<>(HttpStatus.OK);
+//		return new ResponseEntity<>(HttpStatus.OK);
+//		String mensagem = "Mensagem adicional";
+//		return ResponseEntity.ok(mensagem);
+		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
+		return ResponseEntity.ok(response);
 	}
+	
+	
+	
+	
 
 }
 

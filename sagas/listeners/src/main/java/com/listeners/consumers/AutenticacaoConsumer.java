@@ -18,8 +18,10 @@ public class AutenticacaoConsumer {
 	private void consumidor(String mensagem) throws JsonProcessingException, InterruptedException, IllegalArgumentException {
 		AutenticacaoDTO autenticacaoDTO = new ObjectMapper().readValue(mensagem, AutenticacaoDTO.class);
 		System.out.println("------------AUTENTICACAO--------------------");
-		System.out.println(autenticacaoDTO.email);
-		System.out.println(autenticacaoDTO.senha);
+		System.out.println(autenticacaoDTO.getId());
+		System.out.println(autenticacaoDTO.getEmail());
+		System.out.println(autenticacaoDTO.getSenha());
+		System.out.println(autenticacaoDTO.getCargo());
 		System.out.println("---------------------------------");
 		
 //		throw new IllegalArgumentException("Argumento Inválido");

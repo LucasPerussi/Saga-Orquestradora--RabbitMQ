@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "7e8e82cb-bb99-4f9d-bb5f-0a0d9baa30c4",
+		"name": "BANK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17286749",
+		"_collection_link": "https://crimson-robot-722900.postman.co/workspace/Team-Workspace~1690a07e-ed0f-498d-8bef-72b3b980319f/collection/17286749-7e8e82cb-bb99-4f9d-bb5f-0a0d9baa30c4?action=share&creator=17286749&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "ESTOQUE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigoProduto\": \"5345fdsfsd345\",\n    \"quantidade\": \"15\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/estoque",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estoque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRECO",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigoProduto\": \"6\",\n    \"preco\": 2324.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/preco",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"preco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"nome\": \"bbbbbb\",\n    \"sobrenome\": \"Perussi\",\n    \"email\": \"perussilucas@hotmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 187,\n    \"clienteId\": 2,\n    \"gerenteId\": 3,\n    \"numero\": \"555555\",\n    \"saldo\": 1213.23,\n    \"limite\": 1000000.00,\n    \"dataCriacao\": \"2020-12-10\",\n    \"movimentacoes\": [\n        {\n            \"id\": 1,\n            \"data\": \"2020-12-10\",\n            \"tipo\": 0,\n            \"idOrigem\": 23,\n            \"idDestino\": 2\n        }, \n        {\n            \"id\": 2,\n            \"data\": \"2020-12-10\",\n            \"tipo\": 1,\n            \"idOrigem\": 23,\n            \"idDestino\": 2\n        },\n        {\n            \"id\": 3,\n            \"data\": \"2020-12-10\",\n            \"tipo\": 2,\n            \"idOrigem\": 23,\n            \"idDestino\": 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gerente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nome\": \"Lucas\",\n    \"email\": \"perussilucas@hotmail.com\",\n    \"telefone\": \"42424242424\",\n    \"cpf\": \"11111111111\"\n      \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/gerente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gerente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autenticacao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"cargo\": \"Devs\",\n    \"senha\": \"Teste123\",\n    \"email\": \"perussilucas@hotmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/autenticacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autenticacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimentacao",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"idOrigem\": 2,\n    \"idDestino\":3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/movimentacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimentacao"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

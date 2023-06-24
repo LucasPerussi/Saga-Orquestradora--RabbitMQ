@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.producers.constantes.RabbitMQConstantes;
 import com.producers.dto.GerenteDTO;
 import com.producers.service.RabbitMQService;
+import com.producers.uteis.CustomResponse;
+import com.producers.uteis.RabbitMQConstantes;
 
 @RestController
 @RequestMapping(value = "gerente")
@@ -24,7 +25,8 @@ public class GerenteController {
 	private ResponseEntity<?> novoGerente(@RequestBody GerenteDTO gerenteDTO) {
 //		System.out.println(gerenteDTO.codigoProduto);
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_GERENTE, gerenteDTO);
-		return new ResponseEntity<>(HttpStatus.OK);
+		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
+		return ResponseEntity.ok(response);
 	}
 
 }

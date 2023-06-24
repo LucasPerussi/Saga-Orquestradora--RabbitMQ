@@ -17,8 +17,12 @@ public class GerenteConsumer {
 	@RabbitListener(queues = RabbitMQConstantes.FILA_GERENTE)
 	private void consumidor(String mensagem) throws JsonProcessingException, InterruptedException, IllegalArgumentException {
 		GerenteDTO gerenteDTO = new ObjectMapper().readValue(mensagem, GerenteDTO.class);
-		System.out.println("------------GERENTE--------------------");
-		System.out.println(gerenteDTO.nome);
+		System.out.println("------------GERENTE--------------");
+		System.out.println(gerenteDTO.getId());
+		System.out.println(gerenteDTO.getNome());
+		System.out.println(gerenteDTO.getTelefone());
+		System.out.println(gerenteDTO.getCpf());
+		System.out.println(gerenteDTO.getEmail());
 		System.out.println("---------------------------------");
 		
 //		throw new IllegalArgumentException("Argumento Inválido");

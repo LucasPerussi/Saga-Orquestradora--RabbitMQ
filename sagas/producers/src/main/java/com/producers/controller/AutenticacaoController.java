@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.producers.constantes.RabbitMQConstantes;
 import com.producers.dto.AutenticacaoDTO;
 import com.producers.service.RabbitMQService;
+import com.producers.uteis.CustomResponse;
+import com.producers.uteis.RabbitMQConstantes;
 
 @RestController
 @RequestMapping(value = "autenticacao")
@@ -22,9 +23,10 @@ public class AutenticacaoController {
 //	envia mensagem para a fila
 	@PutMapping
 	private ResponseEntity<?> Autenticacao(@RequestBody AutenticacaoDTO autenticacaoDTO) {
-		System.out.println(autenticacaoDTO.email);
+		System.out.println(autenticacaoDTO.getEmail());
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_AUTENTICACAO, autenticacaoDTO);
-		return new ResponseEntity<>(HttpStatus.OK);
+		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
+		return ResponseEntity.ok(response);
 	}
 
 }

@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.producers.constantes.RabbitMQConstantes;
 import com.producers.dto.ContaDTO;
 import com.producers.service.RabbitMQService;
+import com.producers.uteis.CustomResponse;
+import com.producers.uteis.RabbitMQConstantes;
 @RestController
 @RequestMapping(value = "conta")
 public class ContaController {
@@ -23,7 +24,8 @@ public class ContaController {
 	private ResponseEntity<?> novaConta(@RequestBody ContaDTO contaDTO) {
 //		System.out.println(contaDTO);
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_CONTA, contaDTO);
-		return new ResponseEntity<>(HttpStatus.OK);
+		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
+		return ResponseEntity.ok(response);
 	}
 
 }

@@ -18,13 +18,22 @@ public class ClienteConsumer {
 	private void consumidor(String mensagem) throws JsonProcessingException, InterruptedException, IllegalArgumentException {
 		ClienteDTO cliDto = new ObjectMapper().readValue(mensagem, ClienteDTO.class);
 		System.out.println("------------CLIENTE--------------------");
-		System.out.println(cliDto.id);
-		System.out.println(cliDto.email);
-		System.out.println(cliDto.nome);
-		System.out.println(cliDto.sobrenome);
+		System.out.println(cliDto.getCpf());
+		System.out.println(cliDto.getEmail());
+		System.out.println(cliDto.getNome());
+		System.out.println(cliDto.getSalario());
+		System.out.println(cliDto.getTelefone());
+		System.out.println(cliDto.getRua());
+		System.out.println(cliDto.getLogradouro());
+		System.out.println(cliDto.getNumero());
+		System.out.println(cliDto.getComplemento());
+		System.out.println(cliDto.getCep());
+		System.out.println(cliDto.getCidade());
+		System.out.println(cliDto.getEstado());
 		System.out.println("---------------------------------");
 		
 //		throw new IllegalArgumentException("Argumento Inválido");
 		
+	 
 	}
 }
