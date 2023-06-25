@@ -14,7 +14,7 @@ import com.producers.uteis.CustomResponse;
 import com.producers.uteis.RabbitMQConstantes;
 
 @RestController
-@RequestMapping(value = "movimentacao")
+@RequestMapping(value = "transacao")
 public class MovimentacaoController {
 	
 

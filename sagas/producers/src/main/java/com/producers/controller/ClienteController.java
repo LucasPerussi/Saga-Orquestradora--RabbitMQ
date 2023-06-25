@@ -2,6 +2,7 @@ package com.producers.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,7 @@ public class ClienteController {
 	RabbitMQService rabbitMQService;
 	
 //	envia mensagem para a fila
-	@PutMapping
+	@PostMapping
 	private ResponseEntity<?> novoCliente(@RequestBody ClienteDTO clienteDTO) {
 		System.out.println(clienteDTO.getNome());
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_CLIENTE, clienteDTO);

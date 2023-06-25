@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.producers.dto.ContaDTO;
+import com.producers.dto.ClienteDTO;
 import com.producers.service.RabbitMQService;
 import com.producers.uteis.CustomResponse;
 import com.producers.uteis.RabbitMQConstantes;
@@ -22,10 +22,9 @@ public class AutoCadastroController {
 	
 //	envia mensagem para a fila
 	@PostMapping
-	private ResponseEntity<?> novaConta(@RequestBody ContaDTO contaDTO) {
-//		System.out.println(contaDTO);
+	private ResponseEntity<?> novaConta(@RequestBody ClienteDTO clienteDTO) {
 //		ESPERA UM JSON IGUAL A CONTA
-		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_AUTO_CADASTRO, contaDTO);
+		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_AUTO_CADASTRO, clienteDTO);
 		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
 		return ResponseEntity.ok(response);
 	}

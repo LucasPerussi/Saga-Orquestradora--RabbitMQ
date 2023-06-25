@@ -12192,3 +12192,171 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 10:57:17.279
 !MESSAGE Classpath changed for project: producers
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-25 13:54:27.332
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 13:55:32.269
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 13:59:11.148
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 13:59:58.307
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:00:11.268
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:00:34.222
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:01:38.590
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:01:38.592
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:02:03.000
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:02:24.528
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:03:33.888
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:04:25.022
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:05:11.373
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:06:06.960
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:07:04.546
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:07:44.006
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:09:26.835
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:10:09.629
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:10:18.950
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-25 14:10:34.934
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:10:50.371
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:14:09.317
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:15:42.055
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:16:06.611
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:16:39.373
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:17:21.623
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:27:13.073
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:27:50.507
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:28:24.363
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-25 14:29:51.490
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:30:55.758
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:31:29.926
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:31:29.927
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:31:52.851
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:32:46.906
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:36:17.290
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-25 14:38:56.687
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:39:11.824
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:42:32.110
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:49:17.358
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:57:21.601
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:58:46.946
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:58:57.233
+!MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:59:05.960
+!MESSAGE Classpath changed for project: listeners

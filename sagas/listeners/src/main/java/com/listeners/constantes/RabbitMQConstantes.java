@@ -11,6 +11,7 @@ public class RabbitMQConstantes {
 	public static final String FILA_INSERE_GERENTE = "INSERE_GERENTE";
 	public static final String FILA_MOVIMENTACAO = "MOVIMENTACAO";
 	public static final String FILA_REMOCAO_GERENTE = "REMOCAO_GERENTE";
+	public static final String FILA_LOGOUT = "LOGOUT";
 	
 
 } 
