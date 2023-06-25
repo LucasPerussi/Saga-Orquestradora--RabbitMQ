@@ -24,6 +24,7 @@ public class AutoCadastroController {
 	@PostMapping
 	private ResponseEntity<?> novaConta(@RequestBody ContaDTO contaDTO) {
 //		System.out.println(contaDTO);
+//		ESPERA UM JSON IGUAL A CONTA
 		this.rabbitMQService.enviaMensagem(RabbitMQConstantes.FILA_AUTO_CADASTRO, contaDTO);
 		CustomResponse response = new CustomResponse(HttpStatus.OK, "Sucesso!");
 		return ResponseEntity.ok(response);
