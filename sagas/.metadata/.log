@@ -12360,3 +12360,21 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 14:59:05.960
 !MESSAGE Classpath changed for project: listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 15:57:24.047
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 15:59:09.719
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 15:59:42.734
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 15:59:48.234
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 16:00:30.570
+!MESSAGE Classpath changed for project: producers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-06-25 16:01:00.150
+!MESSAGE Classpath changed for project: producers
